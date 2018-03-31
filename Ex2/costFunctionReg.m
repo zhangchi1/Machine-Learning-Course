@@ -26,7 +26,7 @@ end
 tempSumTheta = sum(theta(2:size(theta), :) .* theta(2:size(theta), :));
 
 J = (tempSum / m) + (lambda / (2 * m)) * tempSumTheta
-
+w
 % Comput grad Func
 
 grad(1) = sum((sigmoid(X * theta) - y)' * X(:,1)) / m
